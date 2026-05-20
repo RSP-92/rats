@@ -1,3 +1,8 @@
+.all {
+    display: flex;
+  flex-flow: row wrap;
+
+}
 body { 
 
     background-color: white;
@@ -9,7 +14,6 @@ header {
     color: white;
     background-color: #08179C;
     text-align: center;
-    padding: 20px;
 }
 
 h1 {
@@ -18,15 +22,15 @@ h1 {
     font-weight: bolder;
 }
 
-nav {
-    float: left;
+aside {
     background-color: #EB6800;
     width: 20%;
-    height: 500px;
+    height: 600px;
     padding-bottom: 70px;
     color: white;
     text-align: center;
     font-size: 30px;
+    
 }
 
 nav ul{
@@ -34,11 +38,9 @@ nav ul{
 }
 
 .middle {
-    float: right;
     background-color: white;
     width: 80%;
-    height: 480px;
-    padding-bottom: 70px;
+    height: 40%;
     font-size: 50px;
 }
 
