@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 <body> 
-
+ <script>src ="index.js"</script>
 
    
     <header>NYC Rat Map </header>
@@ -15,7 +15,7 @@
 <aside class="aside-1">
   
 <h3>Boroughs</h3>
-  <nav>
+  <nav id="mainNav">
 <li><a href="C:/python_work/rats/boroughs/Brooklyn.html">Brooklyn</a></li>
 <li><a href="C:/python_work/rats/boroughs/Bronx.html">Bronx</a></li>
 <li><a href="C:/python_work/rats/boroughs/Manhattan.html">Manhattan</a></li>
@@ -25,7 +25,17 @@
 </aside>
 
 <div> <h2>Will there be rats?</h2>
-<input type="text" placeholder="search...">
+<form class="form">
+    <input type="text" placeholder="search..." id="zipcode" onkeyup="zipcodeSearch">
+    <button id="search" class="search-bar">search</button>
+    <button id="clear" class="clear-search">clear</button>
+</form>
+</div>
+
+<div class="results-container> ul class=results-list" id="list">
+    <ul>
+
+    </div>
 
 </div>
 
