@@ -7,37 +7,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 <body> 
- <script>src ="index.js"</script>
 
-   
     <header>NYC Rat Map </header>
 
 <aside class="aside-1">
   
 <h3>Boroughs</h3>
   <nav id="mainNav">
-<li><a href="C:/python_work/rats/boroughs/Brooklyn.html">Brooklyn</a></li>
-<li><a href="C:/python_work/rats/boroughs/Bronx.html">Bronx</a></li>
-<li><a href="C:/python_work/rats/boroughs/Manhattan.html">Manhattan</a></li>
-<li><a href="C:/python_work/rats/boroughs/Queens.html">Queens</a></li>
-<li><a href="C:/python_work/rats/boroughs/Staten Island.html">Staten Island</a></li>
+<li><a href="file:///C:/boroughs/Brooklyn.html">Brooklyn</a></li>
+<li><a href="file:///C:/python_work/rats/boroughs/Bronx.html">Bronx</a></li>
+<li><a href="file:///C:/python_work/rats/boroughs/Manhattan.html">Manhattan</a></li>
+<li><a href="file:///C:/python_work/rats/boroughs/Queens.html">Queens</a></li>
+<li><a href="file:///C:/python_work/rats/boroughs/Staten Island.html">Staten Island</a></li>
 </nav>
 </aside>
 
 <div> <h2>Will there be rats?</h2>
-<form class="form">
-    <input type="text" placeholder="search..." id="zipcode" onkeyup="zipcodeSearch">
-    <button id="search" class="search-bar">search</button>
-</form>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for neighborhoods...">
+
+<ul id="myUL">
+        <li><a href="file:///C:/python_work/rats/boroughs/Manhattan/Marble Hill.html">Marble Hill</a></li>
+        <li><a href="file:///C:/python_work/rats/boroughs/Manhattan/Chinatown.html">Chinatown</a></li>
+        <li><a href = "file:///C:/python_work/rats/boroughs/Manhattan/Washington Heights.html ">Washington Heights</a></li>
+        <li><a href = "file:///C:/python_work/rats/boroughs/Manhattan/Inwood.html ">Inwood</a></li>
+        <li><a href = "file:///C:/python_work/rats/boroughs/Manhattan/Hamilton Heights.html ">Hamilton Heights</a></li>
+        <li><a href = "file:///C:/python_work/rats/boroughs/Manhattan/Manhattanville.html ">Manhattanville</a></li>
+        <li><a href = "file:///C:/python_work/rats/boroughs/Manhattan/Central Harlem.html ">Central Harlem</a></li>
+        <li><a href = "file:///C:/python_work/rats/boroughs/Manhattan/East Harlem.html ">East Harlem</a></li>
+        <li><a href = "file:///C:/python_work/rats/boroughs/Manhattan/Upper-East-Side.html ">Upper East Side</a></li>
+        <li><a href = "file:///C:/python_work/rats/boroughs/Manhattan/Yorkville.html ">Yorkville</a></li>
+        <li><a href = "file:///C:/python_work/rats/boroughs/Manhattan/Lenox-Hill.html ">Lenox Hill</a></li>
+        <li><a href = "file:///C:/python_work/rats/boroughs/Manhattan/Roosevelt-Island.html ">Roosevelt Island</a></li>
+        <li><a href = "file:///C:/python_work/rats/boroughs/Manhattan/Upper-West-Side.html ">Upper West Side</a></li>
+        <li><a href = "file:///C:/python_work/rats/boroughs/Manhattan/Lincoln-Square.html ">Lincoln Square</a></li>
+        <li><a href = "file:///C:/python_work/rats/boroughs/Manhattan/Clinton.html ">Clinton</a></li>
+        <li><a href = "file:///C:/python_work/rats/boroughs/Manhattan/Midtown.html ">Midtown</a></li>
+        <li><a href = "file:///C:/python_work/rats/boroughs/Manhattan/Murray-Hill.html ">Murray Hill</a></li>
+        <li><a href = "file:///C:/python_work/rats/boroughs/Manhattan/Chelsea.html ">Chelsea</a></li>
+        <li><a href = "file:///C:/python_work/rats/boroughs/Manhattan/Greenwich-Village.html ">Greenwich Village</a></li>
+        <li><a href = "file:///C:/python_work/rats/boroughs/Manhattan/East-Village.html ">East Village</a></li>
+        <li><a href = "file:///C:/python_work/rats/boroughs/Manhattan/Lower-East-Side.html ">Lower East Side</a></li>
+        <li><a href = "file:///C:/python_work/rats/boroughs/Manhattan/Tribeca.html ">Tribeca</a></li>
+        <li><a href = "file:///C:/python_work/rats/boroughs/Manhattan/Little-Italy.html ">Little Italy</a></li>
+        <li><a href = "file:///C:/python_work/rats/boroughs/Manhattan/Soho.html ">Soho</a></li>
+        <li><a href = "file:///C:/python_work/rats/boroughs/Manhattan/West-Village.html ">West Village</a></li>
+        <li><a href = "file:///C:/python_work/rats/boroughs/Manhattan/Manhattan-Valley.html ">Manhattan Valley</a></li>
+        <li><a href = "file:///C:/python_work/rats/boroughs/Manhattan/Morningside-Heights.html ">Morningside Heights</a></li>
+        <li><a href = "file:///C:/python_work/rats/boroughs/Manhattan/Gramercy.html ">Gramercy</a></li>
+        <li><a href = "file:///C:/python_work/rats/boroughs/Manhattan/Battery-Park-City.html ">Battery Park City</a></li>
+        <li><a href = "file:///C:/python_work/rats/boroughs/Manhattan/Financial-District.html ">Financial District</a></li>
+        <li><a href = "file:///C:/python_work/rats/boroughs/Manhattan/Carnegie Hill.html ">Carnegie Hill</a></li>
+        <li><a href = "file:///C:/python_work/rats/boroughs/Manhattan/Noho.html ">Noho</a></li>
+        <li><a href = "file:///C:/python_work/rats/boroughs/Manhattan/Civic-Center.html ">Civic Center</a></li>
+        <li><a href = "file:///C:/python_work/rats/boroughs/Manhattan/Midtown-South.html ">Midtown South</a></li>
+        <li><a href = "file:///C:/python_work/rats/boroughs/Manhattan/Sutton-Place.html ">Sutton Place</a></li>
+        <li><a href = "file:///C:/python_work/rats/boroughs/Manhattan/Turtle-Bay.html ">Turtle Bay</a></li>
+        <li><a href = "file:///C:/python_work/rats/boroughs/Manhattan/Tudor-City.html ">Tudor City</a></li>
+        <li><a href = "file:///C:/python_work/rats/boroughs/Manhattan/Stuyvesant-Town.html ">Stuyvesant Town</a></li>
+        <li><a href = "file:///C:/python_work/rats/boroughs/Manhattan/Flatiron.html ">Flatiron</a></li>
+</ul>
 </div>
 
-<div class="results-container"> 
-    <ul class = "results-list" id="list">
-    </ul>
+<script>
+function myFunction() {
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById('myInput');
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myUL");
+  li = ul.getElementsByTagName('li');
 
-    </div>
 
-
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
 
 <footer>Github</footer>
 
