@@ -1,20 +1,115 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Upper East Side Rat Map</title>
-    <link rel="stylesheet" href="boroughs.css">
+    <title>NYC Rat Map</title>
+    <link rel="stylesheet" href="neighborhoods.css">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
+    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAkYuEAHGJpgBzamIAPV6HAEVCPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAABERAAEAAAABAAAREAAAAAEVVUgAAAAAAUzU1AiAAAABTM1VVAAAAAAUTMzUAAAAAAFETM1BVAAAABVUTVTIAAAAAAFUQUAAAAAAABVUAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA/78AAMO/AAC8fwAAgf8AAIE/AACAfwAAwH8AAOAnAADwBwAA/g8AAP8fAAD/vwAA//8AAP//AAD//wAA" rel="icon" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap" rel="stylesheet">  
+  
+  </head>
 <body> 
-<header>Upper East Side</header>
-    <nav>
-    <a href="file:///C:/python_work/rats/index.html">Home</a>
-    <a href="C:/python_work/rats/boroughs/Brooklyn.html">About</a>
-    <a href="C:/python_work/rats/boroughs/Bronx.html">Bronx</a>
-    <a href="C:/python_work/rats/boroughs/Manhattan.html">Manhattan</a>
-    <a href="C:/python_work/rats/boroughs/Queens.html">Queens</a>
-    <a href="C:/python_work/rats/boroughs/Staten Island.html">Staten-Island</a>
-</nav>
+
+<div class="bigBox"> 
+
+<div class="littleBox">
+    <div class="littleBox3">
+    <h1>Upper East Side</h1>
+    <h2>Rat Map</h2>  
+    <img src="  /images/Rat Meter 4.png">
+    <p>Rat Alert: Red. There have been over 1,000 failed rat inspections in the Upper East Side in the past 2 years! A rat encounter is likely.</p>
+    <iframe allow="geolocation" src="https://data.cityofnewyork.us/dataset/Manhattan-Failed-Rat-Inspections-Past-2-Years/r5xs-j28q/embed?width=800&height=600" width="800" height="600" style="border:0; padding: 0; margin: 0;"></iframe> 
+    </div>
+</div>
+
+<div class="littleBox2">
+    
+    <h3><a href="../boroughs/index.html">Home</a></h3> 
+    <div class="fancy">
+    <p class="fancy">Will there be rats?</p>
+    <button onclick="myFunction()" class="dropbtn">Search by Neighborhood</button> </div>
+    <div id="myDropdown" class="dropdown-content">
+    <input type="text" id="myInput" onkeyup="filterFunction()" placeholder="Search by Neighborhood"> 
+        <a href=" Marble Hill.html">Marble Hill</a>
+        <a href=" Chinatown.html">Chinatown</a>
+        <a href = " Washington Heights.html ">Washington Heights</a>
+        <a href = " Inwood.html ">Inwood</a>
+        <a href = " Hamilton Heights.html ">Hamilton Heights</a>
+        <a href = " Manhattanville.html ">Manhattanville</a>
+        <a href = " Central Harlem.html ">Central Harlem</a>
+        <a href = " East Harlem.html ">East Harlem</a>
+        <a href = " Upper-East-Side.html ">Upper East Side</a>
+        <a href = " Yorkville.html ">Yorkville</a>
+        <a href = " Lenox-Hill.html ">Lenox Hill</a>
+        <a href = " Roosevelt-Island.html ">Roosevelt Island</a>
+        <a href = " Upper-West-Side.html ">Upper West Side</a>
+        <a href = " Lincoln-Square.html ">Lincoln Square</a>
+        <a href = " Clinton.html ">Hell's Kitchen</a>
+        <a href = " Midtown.html ">Midtown</a>
+        <a href = " Murray-Hill.html ">Murray Hill</a>
+        <a href = " Chelsea.html ">Chelsea</a>
+        <a href = " Greenwich-Village.html ">Greenwich Village</a>
+        <a href = " East-Village.html ">East Village</a>
+        <a href = " Lower-East-Side.html ">Lower East Side</a>
+        <a href = " Tribeca.html ">Tribeca</a>
+        <a href = " Little-Italy.html ">Little Italy</a>
+        <a href = " Soho.html ">Soho</a>
+        <a href = " West-Village.html ">West Village</a>
+        <a href = " Manhattan-Valley.html ">Manhattan Valley</a>
+        <a href = " Morningside-Heights.html ">Morningside Heights</a>
+        <a href = " Gramercy.html ">Gramercy</a>
+        <a href = " Battery-Park-City.html ">Battery Park City</a>
+        <a href = " Financial-District.html ">Financial District</a>
+        <a href = " Carnegie Hill.html ">Carnegie Hill</a>
+        <a href = " Noho.html ">Noho</a>
+        <a href = " Civic-Center.html ">Civic Center</a>
+        <a href = " Midtown-South.html ">Midtown South</a>
+        <a href = " Sutton-Place.html ">Sutton Place</a>
+        <a href = " Turtle-Bay.html ">Turtle Bay</a>
+        <a href = " Tudor-City.html ">Tudor City</a>
+        <a href = " Stuyvesant-Town.html ">Stuyvesant Town</a>
+        <a href = " Flatiron.html ">Flatiron</a>
+  </div>
+     <h3><a href="../boroughs/About.html">About</a></h3>
+    <h3><a href="../boroughs/Manhattan-Overview.html">Manhattan Overview</a></h3>
+     <h3><a href="../boroughs/Queens.html">Queens & Brooklyn </a></h3>
+     <h3><a href="../boroughs/Bronx.html">Bronx</a></h3>
+     <h3><a href="../boroughs/Staten-Island.html">Staten Island</a></h3>
+    
+    
+    
+</div>
+
+</div>
+
+
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+} 
+</script>
+
+<footer>Github</footer>
+
+
+
+
 </body>
 </html>

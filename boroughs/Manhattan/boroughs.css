@@ -1,3 +1,8 @@
+@font-face {
+    font-family: norwester;
+    src: url(norwester.otf);
+}
+
 header { 
     font-size: 80px;
     color: white;
@@ -23,4 +28,38 @@ a {
 
 nav a:hover{
     background-color: #EB6800;
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+aside {
+   background-color: #008EB7;
+   color: white;
+   float: left;
+   width: 200px;
+   height: 600px;
+   display: flex;
+   flex-direction: column;
+}
+
+h2 {
+    color: white;
+    font-style: italic;
+    font-size: 30px;
+    text-align: center;
+    
+}
+
+p {
+    color: white;
+    font-size: large;
+    text-align: center;
+}
+
+img {
+    align-items: center;
 }
