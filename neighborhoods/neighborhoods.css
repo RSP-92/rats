@@ -1,0 +1,198 @@
+
+@font-face {
+  font-family:StackSansHeadline;
+  src: url(StackSansHeadline-VariableFont_wght.ttf); 
+}
+body { 
+
+    background-color: #08179C;
+    font-family: "StackSansHeadline";
+ }
+ 
+
+
+h1 {
+    font-size: 70px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+h2 {
+    font-size: 50px;
+    text-align: center;
+    
+}
+
+h3 {
+    font-size: 40px;
+    text-align: left;
+    background-color: white;
+    color:#08179C;
+    padding: 1%;
+    
+
+}
+
+a {
+    text-decoration: none;
+    color: #08179C;
+}
+
+.fancy {
+    background-color: #08179C;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+  
+}
+
+
+p {
+    font-size: 30px;
+}
+
+
+ a:hover{
+    background-color: #08179C;
+    color: white;
+}
+
+.bigBox {
+    display: flex;
+}
+
+.littleBox {
+    flex: 50%;
+    flex-direction: column;
+    color: white;
+   
+}
+
+.littleBox2 {
+    flex: 50%;
+    flex-direction: row;
+    background-color: white;
+    color: #08179C;
+}
+
+.littleBox3 {
+  flex-flow: column;
+ 
+}
+.ratAlert1 {
+    color:green;
+    font-size: 40px;
+    
+
+}
+
+.ratAlert2 {
+    color: yellow;
+    font-size: 40px;
+}
+
+.ratAlert3 {
+    color:orange;
+}
+
+.ratAlert4 {
+    color:red;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-basis: 70px;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+
+
+img {
+   padding-left: 30%;
+   width: 350px;
+   height: 200px;
+}
+
+footer {
+    background-color: #08179C;
+    font-size: 20px;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
+
+.dropbtn {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  font-size: 20px;
+  border: 1px solid gray;
+  border-radius: 50px;
+  font-family: 'nor';
+  cursor: pointer;
+  width: 300px;
+  height: 50px;
+  margin-top: 5%;
+
+
+  
+}
+
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: gray;
+}
+
+
+#myInput {
+  box-sizing: border-box;
+  background-image: url('../../images/magnifying-glass-solid-full.svg');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  background-size: 8%;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  
+}
+
+
+#myInput:focus {outline: 3px solid #ddd;}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  border: 1px solid #ddd;
+  z-index: 1;
+  margin-left: 20%;
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+
+.show {display:block;}
