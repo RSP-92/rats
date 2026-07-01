@@ -1,12 +1,7 @@
-
-@font-face {
-  font-family:StackSansHeadline;
-  src: url(StackSansHeadline-VariableFont_wght.ttf); 
-}
 body { 
 
     background-color: #08179C;
-    font-family: "StackSansHeadline";
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
  }
  
 
