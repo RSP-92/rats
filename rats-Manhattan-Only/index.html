@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manhattan Rat Map</title>
+    <link rel="stylesheet" href="main-style.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAkYuEAHGJpgBzamIAPV6HAEVCPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAABERAAEAAAABAAAREAAAAAEVVUgAAAAAAUzU1AiAAAABTM1VVAAAAAAUTMzUAAAAAAFETM1BVAAAABVUTVTIAAAAAAFUQUAAAAAAABVUAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA/78AAMO/AAC8fwAAgf8AAIE/AACAfwAAwH8AAOAnAADwBwAA/g8AAP8fAAD/vwAA//8AAP//AAD//wAA" rel="icon" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>  
+  
+  </head>
+<body> 
+
+<div class="bigBox"> 
+
+<div class="littleBox">
+<img src="images/double_rat.png" alt="clip art rat">
+    <div class="littleBox3">
+    <h1>Manhattan</h1>
+    <h2>Rat Map</h2>   
+    </div>
+</div>
+
+<div class="littleBox2">
+    
+    <h3><a href="index.html">Home</a></h3> 
+    <div class="fancy">
+    <p class="fancy">Will there be rats?</p>
+    <button onclick="myFunction()" class="dropbtn">Search by Neighborhood</button> </div>
+    <div id="myDropdown" class="dropdown-content">
+    <input type="text" id="myInput" onkeyup="filterFunction()" placeholder="Search by Neighborhood"> 
+        <a href="neighborhoods/Marble Hill.html">Marble Hill</a>
+        <a href="neighborhoods/Chinatown.html">Chinatown</a>
+        <a href = "neighborhoods/Washington Heights.html ">Washington Heights</a>
+        <a href = "neighborhoods/Inwood.html ">Inwood</a>
+        <a href = "neighborhoods/Hamilton Heights.html ">Hamilton Heights</a>
+        <a href = "neighborhoods/Manhattanville.html ">Manhattanville</a>
+        <a href = "neighborhoods/Central Harlem.html ">Central Harlem</a>
+        <a href = "neighborhoods/East Harlem.html ">East Harlem</a>
+        <a href = "neighborhoods/Upper-East-Side.html ">Upper East Side</a>
+        <a href = "neighborhoods/Yorkville.html ">Yorkville</a>
+        <a href = "neighborhoods/Lenox-Hill.html ">Lenox Hill</a>
+        <a href = "neighborhoods/Roosevelt-Island.html ">Roosevelt Island</a>
+        <a href = "neighborhoods/Upper-West-Side.html ">Upper West Side</a>
+        <a href = "neighborhoods/Lincoln-Square.html ">Lincoln Square</a>
+        <a href = "neighborhoods/Clinton.html ">Hell's Kitchen</a>
+        <a href = "neighborhoods/Midtown.html ">Midtown</a>
+        <a href = "neighborhoods/Murray-Hill.html ">Murray Hill</a>
+        <a href = "neighborhoods/Chelsea.html ">Chelsea</a>
+        <a href = "neighborhoods/Greenwich-Village.html ">Greenwich Village</a>
+        <a href = "neighborhoods/East-Village.html ">East Village</a>
+        <a href = "neighborhoods/Lower-East-Side.html ">Lower East Side</a>
+        <a href = "neighborhoods/Tribeca.html ">Tribeca</a>
+        <a href = "neighborhoods/Little-Italy.html ">Little Italy</a>
+        <a href = "neighborhoods/Soho.html ">Soho</a>
+        <a href = "neighborhoods/West-Village.html ">West Village</a>
+        <a href = "neighborhoods/Manhattan-Valley.html ">Manhattan Valley</a>
+        <a href = "neighborhoods/Morningside-Heights.html ">Morningside Heights</a>
+        <a href = "neighborhoods/Gramercy.html ">Gramercy</a>
+        <a href = "neighborhoods/Battery-Park-City.html ">Battery Park City</a>
+        <a href = "neighborhoods/Financial-District.html ">Financial District</a>
+        <a href = "neighborhoods/Carnegie Hill.html ">Carnegie Hill</a>
+        <a href = "neighborhoods/Noho.html ">Noho</a>
+        <a href = "neighborhoods/Civic-Center.html ">Civic Center</a>
+        <a href = "neighborhoods/Midtown-South.html ">Midtown South</a>
+        <a href = "neighborhoods/Sutton-Place.html ">Sutton Place</a>
+        <a href = "neighborhoods/Turtle-Bay.html ">Turtle Bay</a>
+        <a href = "neighborhoods/Tudor-City.html ">Tudor City</a>
+        <a href = "neighborhoods/Stuyvesant-Town.html ">Stuyvesant Town</a>
+        <a href = "neighborhoods/Flatiron.html ">Flatiron</a>
+  </div>
+     <h3><a href="About.html">About</a></h3>
+    <h3><a href="Overview.html">Overview</a></h3>
+     <h3><a href="Resources.html">Resources </a></h3>
+    
+    
+
+    
+    
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+} 
+</script>
+
+<footer><a herf = "https://github.com/RSP-92">Github</a></footer>
+
+
+
+
+</body>
+</html>
