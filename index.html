@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>NYC Rat Map</title>
-    <link rel="stylesheet" href="main2.css">
+    <title>Manhattan Rat Map</title>
+    <link rel="stylesheet" href="main-style.css">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAkYuEAHGJpgBzamIAPV6HAEVCPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAABERAAEAAAABAAAREAAAAAEVVUgAAAAAAUzU1AiAAAABTM1VVAAAAAAUTMzUAAAAAAFETM1BVAAAABVUTVTIAAAAAAFUQUAAAAAAABVUAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA/78AAMO/AAC8fwAAgf8AAIE/AACAfwAAwH8AAOAnAADwBwAA/g8AAP8fAAD/vwAA//8AAP//AAD//wAA" rel="icon" type="image/x-icon">
@@ -14,9 +14,9 @@
 <div class="bigBox"> 
 
 <div class="littleBox">
-<img src="../images/double_rat.png" alt="clip art rat">
+<img src="images/double_rat.png" alt="clip art rat">
     <div class="littleBox3">
-    <h1>NYC</h1>
+    <h1>Manhattan</h1>
     <h2>Rat Map</h2>   
     </div>
 </div>
@@ -29,54 +29,50 @@
     <button onclick="myFunction()" class="dropbtn">Search by Neighborhood</button> </div>
     <div id="myDropdown" class="dropdown-content">
     <input type="text" id="myInput" onkeyup="filterFunction()" placeholder="Search by Neighborhood"> 
-        <a href="../boroughs/Manhattan/Marble Hill.html">Marble Hill</a>
-        <a href="../boroughs/Manhattan/Chinatown.html">Chinatown</a>
-        <a href = "../boroughs/Manhattan/Washington Heights.html ">Washington Heights</a>
-        <a href = "../boroughs/Manhattan/Inwood.html ">Inwood</a>
-        <a href = "../boroughs/Manhattan/Hamilton Heights.html ">Hamilton Heights</a>
-        <a href = "../boroughs/Manhattan/Manhattanville.html ">Manhattanville</a>
-        <a href = "../boroughs/Manhattan/Central Harlem.html ">Central Harlem</a>
-        <a href = "../boroughs/Manhattan/East Harlem.html ">East Harlem</a>
-        <a href = "../boroughs/Manhattan/Upper-East-Side.html ">Upper East Side</a>
-        <a href = "../boroughs/Manhattan/Yorkville.html ">Yorkville</a>
-        <a href = "../boroughs/Manhattan/Lenox-Hill.html ">Lenox Hill</a>
-        <a href = "../boroughs/Manhattan/Roosevelt-Island.html ">Roosevelt Island</a>
-        <a href = "../boroughs/Manhattan/Upper-West-Side.html ">Upper West Side</a>
-        <a href = "../boroughs/Manhattan/Lincoln-Square.html ">Lincoln Square</a>
-        <a href = "../boroughs/Manhattan/Clinton.html ">Hell's Kitchen</a>
-        <a href = "../boroughs/Manhattan/Midtown.html ">Midtown</a>
-        <a href = "../boroughs/Manhattan/Murray-Hill.html ">Murray Hill</a>
-        <a href = "../boroughs/Manhattan/Chelsea.html ">Chelsea</a>
-        <a href = "../boroughs/Manhattan/Greenwich-Village.html ">Greenwich Village</a>
-        <a href = "../boroughs/Manhattan/East-Village.html ">East Village</a>
-        <a href = "../boroughs/Manhattan/Lower-East-Side.html ">Lower East Side</a>
-        <a href = "../boroughs/Manhattan/Tribeca.html ">Tribeca</a>
-        <a href = "../boroughs/Manhattan/Little-Italy.html ">Little Italy</a>
-        <a href = "../boroughs/Manhattan/Soho.html ">Soho</a>
-        <a href = "../boroughs/Manhattan/West-Village.html ">West Village</a>
-        <a href = "../boroughs/Manhattan/Manhattan-Valley.html ">Manhattan Valley</a>
-        <a href = "../boroughs/Manhattan/Morningside-Heights.html ">Morningside Heights</a>
-        <a href = "../boroughs/Manhattan/Gramercy.html ">Gramercy</a>
-        <a href = "../boroughs/Manhattan/Battery-Park-City.html ">Battery Park City</a>
-        <a href = "../boroughs/Manhattan/Financial-District.html ">Financial District</a>
-        <a href = "../boroughs/Manhattan/Carnegie Hill.html ">Carnegie Hill</a>
-        <a href = "../boroughs/Manhattan/Noho.html ">Noho</a>
-        <a href = "../boroughs/Manhattan/Civic-Center.html ">Civic Center</a>
-        <a href = "../boroughs/Manhattan/Midtown-South.html ">Midtown South</a>
-        <a href = "../boroughs/Manhattan/Sutton-Place.html ">Sutton Place</a>
-        <a href = "../boroughs/Manhattan/Turtle-Bay.html ">Turtle Bay</a>
-        <a href = "../boroughs/Manhattan/Tudor-City.html ">Tudor City</a>
-        <a href = "../boroughs/Manhattan/Stuyvesant-Town.html ">Stuyvesant Town</a>
-        <a href = "../boroughs/Manhattan/Flatiron.html ">Flatiron</a>
+        <a href="neighborhoods/Marble Hill.html">Marble Hill</a>
+        <a href="neighborhoods/Chinatown.html">Chinatown</a>
+        <a href = "neighborhoods/Washington Heights.html ">Washington Heights</a>
+        <a href = "neighborhoods/Inwood.html ">Inwood</a>
+        <a href = "neighborhoods/Hamilton Heights.html ">Hamilton Heights</a>
+        <a href = "neighborhoods/Manhattanville.html ">Manhattanville</a>
+        <a href = "neighborhoods/Central Harlem.html ">Central Harlem</a>
+        <a href = "neighborhoods/East Harlem.html ">East Harlem</a>
+        <a href = "neighborhoods/Upper-East-Side.html ">Upper East Side</a>
+        <a href = "neighborhoods/Yorkville.html ">Yorkville</a>
+        <a href = "neighborhoods/Lenox-Hill.html ">Lenox Hill</a>
+        <a href = "neighborhoods/Roosevelt-Island.html ">Roosevelt Island</a>
+        <a href = "neighborhoods/Upper-West-Side.html ">Upper West Side</a>
+        <a href = "neighborhoods/Lincoln-Square.html ">Lincoln Square</a>
+        <a href = "neighborhoods/Clinton.html ">Hell's Kitchen</a>
+        <a href = "neighborhoods/Midtown.html ">Midtown</a>
+        <a href = "neighborhoods/Murray-Hill.html ">Murray Hill</a>
+        <a href = "neighborhoods/Chelsea.html ">Chelsea</a>
+        <a href = "neighborhoods/Greenwich-Village.html ">Greenwich Village</a>
+        <a href = "neighborhoods/East-Village.html ">East Village</a>
+        <a href = "neighborhoods/Lower-East-Side.html ">Lower East Side</a>
+        <a href = "neighborhoods/Tribeca.html ">Tribeca</a>
+        <a href = "neighborhoods/Little-Italy.html ">Little Italy</a>
+        <a href = "neighborhoods/Soho.html ">Soho</a>
+        <a href = "neighborhoods/West-Village.html ">West Village</a>
+        <a href = "neighborhoods/Manhattan-Valley.html ">Manhattan Valley</a>
+        <a href = "neighborhoods/Morningside-Heights.html ">Morningside Heights</a>
+        <a href = "neighborhoods/Gramercy.html ">Gramercy</a>
+        <a href = "neighborhoods/Battery-Park-City.html ">Battery Park City</a>
+        <a href = "neighborhoods/Financial-District.html ">Financial District</a>
+        <a href = "neighborhoods/Carnegie Hill.html ">Carnegie Hill</a>
+        <a href = "neighborhoods/Noho.html ">Noho</a>
+        <a href = "neighborhoods/Civic-Center.html ">Civic Center</a>
+        <a href = "neighborhoods/Midtown-South.html ">Midtown South</a>
+        <a href = "neighborhoods/Sutton-Place.html ">Sutton Place</a>
+        <a href = "neighborhoods/Turtle-Bay.html ">Turtle Bay</a>
+        <a href = "neighborhoods/Tudor-City.html ">Tudor City</a>
+        <a href = "neighborhoods/Stuyvesant-Town.html ">Stuyvesant Town</a>
+        <a href = "neighborhoods/Flatiron.html ">Flatiron</a>
   </div>
-     <h3><a href="boroughs/About.html">About</a></h3>
-    <h3><a href="boroughs/Manhattan-Overview.html">Manhattan Overview</a></h3>
-     <h3><a href="../boroughs/Queens.html">Queens & Brooklyn </a></h3>
-     <h3><a href="../boroughs/Bronx.html">Bronx</a></h3>
-     <h3><a href="../boroughs/Staten-Island.html">Staten Island</a></h3>
-     <h3><a href="../boroughs/Queens.html">Queens & Brooklyn </a></h3>
-     <h3><a href="../boroughs/Bronx.html">Bronx</a></h3>
-     <h3><a href="../boroughs/Staten-Island.html">Staten Island</a></h3>
+     <h3><a href="About.html">About</a></h3>
+    <h3><a href="Overview.html">Overview</a></h3>
+     <h3><a href="Resources.html">Resources </a></h3>
+    
     
 
     
@@ -117,7 +113,7 @@ function filterFunction() {
 } 
 </script>
 
-<footer>Github</footer>
+<footer><a herf = "https://github.com/RSP-92">Github</a></footer>
 
 
 
